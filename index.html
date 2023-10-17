@@ -14,12 +14,21 @@
     <h1>Alien Generator</h1>
     <button class="galactic-button" id="generateButton">Generate Alien</button>
     <br />
-    <p id="alienWord"></p>
+    <p id="alienWord" title=""></p>
     <img src="loading.gif" id="alienImage" alt="Alien Image" title="CLICK ON ME">
     <br />
     <audio id="alienSound" controls>
         <source src="" type="audio/mpeg">
     </audio>
+    
+    <div class="switch-container">
+        <span class="switch-label">Switch Voice</span>
+        <label class="switch">
+            <input type="checkbox" id="voiceSwitch">
+            <span class="slider"></span>
+        </label>
+    </div>
+
 
     <a class="mention" href="about.html">About Us</a>
 
