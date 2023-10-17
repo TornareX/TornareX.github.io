@@ -28,6 +28,7 @@ h1 {
 
 #alienImage{
     cursor: pointer;
+    border-radius: 50%;
 }
 
 /* Style de l'info-bulle */
