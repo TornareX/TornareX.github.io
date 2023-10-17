@@ -1,0 +1,88 @@
+body {
+    background-color: #02021b; /* Couleur de fond sombre pour un aspect cosmique */
+    color: #66ccff; /* Couleur du texte */
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+
+#alienWord {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+/* Masquer l'élément source en utilisant la propriété display */
+#alienSound {
+     visibility: hidden;
+}
+
+#alienImage{
+    cursor: pointer;
+}
+
+/* Style de l'info-bulle */
+#alienImage:hover::after {
+    content: attr(title);
+    display: block;
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    bottom: 100%; /* Place l'info-bulle au-dessus de l'image */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Affiche l'info-bulle lorsque vous survolez l'image */
+#alienImage:hover::after {
+    opacity: 1;
+}
+
+/* Style de base du bouton */
+.galactic-button {
+    background-color: #ff66cc; /* Couleur de base rose */
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Lorsque vous survolez le bouton, changez la couleur de fond */
+.galactic-button:hover {
+    background-color: #ff3399; /* Couleur de fond rose plus clair au survol */
+    color: #fff;
+}
+
+/* Ajoutez des styles pour un aspect aérien */
+.galactic-button {
+    background-image: radial-gradient(circle, #ff66cc, transparent); /* Dégradé rose */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mention {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #555;
+    text-align: right;
+}
